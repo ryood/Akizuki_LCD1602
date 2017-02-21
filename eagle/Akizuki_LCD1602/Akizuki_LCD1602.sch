@@ -2719,7 +2719,7 @@ DIN A4, landscape with location and doc. field</description>
 </plain>
 <instances>
 <instance part="LCD1" gate="G$1" x="119.38" y="129.54"/>
-<instance part="GND1" gate="1" x="99.06" y="71.12"/>
+<instance part="GND1" gate="1" x="101.6" y="71.12"/>
 <instance part="P+1" gate="1" x="86.36" y="119.38"/>
 <instance part="R1" gate="1" x="86.36" y="99.06"/>
 <instance part="P+2" gate="1" x="147.32" y="99.06"/>
@@ -2735,14 +2735,14 @@ DIN A4, landscape with location and doc. field</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="LCD1" gate="G$1" pin="VCC"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="99.06" y1="114.3" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R1" gate="1" pin="A"/>
-<wire x1="99.06" y1="88.9" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="88.9" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="93.98" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="88.9" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
-<junction x="99.06" y="88.9"/>
+<wire x1="86.36" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="LCD1" gate="G$1" pin="GND"/>
+<wire x1="101.6" y1="114.3" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
+<junction x="101.6" y="88.9"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -2757,12 +2757,12 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="86.36" y1="116.84" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="109.22" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="LCD1" gate="G$1" pin="GND"/>
-<wire x1="101.6" y1="109.22" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R1" gate="1" pin="E"/>
 <wire x1="86.36" y1="104.14" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
 <junction x="86.36" y="109.22"/>
+<pinref part="LCD1" gate="G$1" pin="VCC"/>
+<wire x1="99.06" y1="114.3" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="147.32" y1="88.9" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
